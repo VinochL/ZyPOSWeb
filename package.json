@@ -28,5 +28,10 @@
     "gh-pages": "^6.3.0",
     "globals": "^16.3.0",
     "vite": "^7.0.4"
+  },
+  "scripts": {
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy":   "gh-pages -d dist"
   }
 }
